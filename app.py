@@ -13,7 +13,7 @@ CORS(app)
 EXCEL_PATH = os.environ.get("EXCEL_PATH", "train.xlsx")
 excel_data = pd.read_excel(EXCEL_PATH)
 
-labels_list = = [
+labels_list = [
     'Cherry leaf',
     'Peach leaf',
     'Corn leaf blight',
