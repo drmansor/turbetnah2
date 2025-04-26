@@ -78,7 +78,7 @@ label_colors = {
 
 def read_detections(image_id, img_height):
     detections = []
-    matched_rows = excel_data[excel_data.iloc[:, 0].astype(str).str.contains(image_id, na=False)]
+    matched_rows = excel_data[excel_data.iloc[:, 0].astype(str).str.equals(image_id, na=False)]
     for _, row in matched_rows.iterrows():
         label = str(row[1]).strip()
         xmin = int(row[2])
